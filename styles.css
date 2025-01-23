@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(https://picsum.photos/1600/900);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+h1{
+    font-family: "Chakra Petch", serif;
+    font-size: 100px;
+    color: #62cf99;
+}
+
+button{
+    font-size: 70px;
+    padding: 10px;
+    margin: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+button:hover{
+    opacity: .8;
+}
+
+
+.rock{
+    background-color: #c8e268;
+}
+.paper{
+    background-color: #df5f5f;
+}
+.scissors{
+    background-color: #e9d738;
+
+}
+
+p{
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 4px;
+}
+
+#result{
+    color: #ffff00;
+}
+
+#human-score{
+    color: #0400f7;
+}
+
+#machine-score{
+    color: #f70000;
+}
