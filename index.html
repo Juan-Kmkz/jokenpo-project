@@ -16,17 +16,20 @@
             <h1>JokenPô</h1>
 
             <div id="buttons-div">
-                <button class="rock">🪨</button>
-                <button class="paper">📄</button>
-                <button class="scissors">✂️</button>
+                <button onclick="playerSelection('rock')" class="buttons" id="rock">🪨</button>
+                <button onclick="playerSelection('paper')" class="buttons" id="paper">📄</button>
+                <button onclick="playerSelection('scissors')" class="buttons" id="scissors">✂️</button>
             </div>
 
             <p>Você escolheu: <span id="human-choice">---</span></p>
             <p>A máquina escolheu: <span id="machine-choice">---</span></p>
-            <P>Resultado: <span id="result"></span></P>
+            <P>Resultado: <span id="result">---</span></P>
             <p>Sua pontuação: <span id="human-score">0</span></p>
             <p>Pontuação da máquina: <span id="machine-score">0</span></p>
+
+            <button id="reset" onclick="restartGame()">Reset</button>
         </main>
     </body>
+    <script src="./script.js"></script>
 
 </html>

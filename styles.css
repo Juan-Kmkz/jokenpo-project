@@ -45,14 +45,23 @@ button:hover{
     opacity: .8;
 }
 
+#reset{
+    font-family: "Chakra Petch", serif;
+    background-color: #62cf99;
+    color: #e66767;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bolder;
+}
 
-.rock{
+#rock{
     background-color: #c8e268;
 }
-.paper{
+#paper{
     background-color: #df5f5f;
 }
-.scissors{
+#scissors{
     background-color: #e9d738;
 
 }
@@ -67,7 +76,7 @@ p{
 }
 
 #result{
-    color: #ffff00;
+    color: #5900ff;
 }
 
 #human-score{
