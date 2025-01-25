@@ -7,13 +7,19 @@ const machineSelection = document.getElementById("machine-choice")
 let playerPts = 0
 let cpuPts = 0
 
+const GAME_OPTIONS = {
+    ROCK: "rock",
+    PAPER: "paper",
+    SCISSORS: "scissors",
+}
+
 const playerSelection = (humanChoice) => {
     playTheGame(humanChoice, machineChoice())
     switch (humanChoice) {
-        case "rock": humanSelection.innerText = "🪨"
+        case GAME_OPTIONS.ROCK: humanSelection.innerText = "🪨"
             break;
 
-        case "paper": humanSelection.innerText = "📄"
+        case GAME_OPTIONS.PAPER: humanSelection.innerText = "📄"
             break;
 
         default: humanSelection.innerText = "✂️"
@@ -22,7 +28,7 @@ const playerSelection = (humanChoice) => {
 }
 
 const machineChoice = () => {
-    const options = ["rock", "paper", "scissors"]
+    const options = [GAME_OPTIONS.ROCK, GAME_OPTIONS.PAPER, GAME_OPTIONS.SCISSORS]
 
     const randomNumber = Math.floor(Math.random() * 3)
 
@@ -46,9 +52,9 @@ const playTheGame = (playerChoice, cpuChoice) => {
         result.innerText = "Empate"
     }
     else if (
-        (playerChoice === "rock" && cpuChoice === "scissors") ||
-        (playerChoice === "scissors" && cpuChoice === "paper") ||
-        (playerChoice === "paper" && cpuChoice === "rock")) {
+        (playerChoice === GAME_OPTIONS.ROCK && cpuChoice === GAME_OPTIONS.SCISSORS) ||
+        (playerChoice === GAME_OPTIONS.SCISSORS && cpuChoice === GAME_OPTIONS.PAPER) ||
+        (playerChoice === GAME_OPTIONS.PAPER && cpuChoice === GAME_OPTIONS.ROCK)) {
         console.log("ganhou")
 
         playerPts++
