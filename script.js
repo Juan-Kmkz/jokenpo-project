@@ -31,7 +31,6 @@ const machineChoice = () => {
             break;
         case 1: machineSelection.innerText = "📄"
             break;
-
         default: machineSelection.innerText = "✂️"
             break;
     }
